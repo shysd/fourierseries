@@ -27,7 +27,7 @@ function draw() {
 	let x = 0;
 	let y = 0;
 
-	for(var i = 0; i < 100; i++){
+	for(var i = 0; i < 20; i++){
 
 		let prevx = x;
 		let prevy = y;
@@ -65,5 +65,5 @@ function draw() {
 
 	if(y_.length > 250) y_.pop();
 
-	n += 0.01;
+	n += 0.05;
 }
