@@ -12,8 +12,11 @@ var n = 0;
 
 var y_ = [];
 
+var slider;
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
+	slider = createSlider(1, 100, 1);
 }
 
 function draw() {
@@ -27,7 +30,7 @@ function draw() {
 	let x = 0;
 	let y = 0;
 
-	for(var i = 0; i < 20; i++){
+	for(var i = 0; i < slider.value(); i++){
 
 		let prevx = x;
 		let prevy = y;
