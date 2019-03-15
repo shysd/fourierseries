@@ -68,5 +68,5 @@ function draw() {
 
 	if(y_.length > 250) y_.pop();
 
-	n += 0.05;
+	n += 0.02;
 }
