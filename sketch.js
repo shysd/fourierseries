@@ -15,7 +15,7 @@ var y_ = [];
 var slider;
 
 function setup() {
-	createCanvas(600, 400);
+	canvas = createCanvas(600, 400);
 	slider = createSlider(1, 100, 1);
 	
 	canvas.parent('#canvas');
