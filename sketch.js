@@ -77,6 +77,6 @@ function draw() {
 
 	order.html('Order ' + slider.value());
 
-	n += 0.02;
+	n += 0.03;
 	
 }
