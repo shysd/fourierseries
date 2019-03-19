@@ -17,6 +17,11 @@ var slider;
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	slider = createSlider(1, 100, 1);
+	
+	canvas.parent('#canvas');
+	slider.parent('#slider');
+	order = createElement('p', slider.value());
+	order.parent('#n');
 }
 
 function draw() {
@@ -67,6 +72,8 @@ function draw() {
 	endShape();
 
 	if(y_.length > 250) y_.pop();
+	
+	order.html('Order ' + slider.value());
 
 	n += 0.02;
 }
