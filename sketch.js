@@ -15,7 +15,7 @@ var y_ = [];
 var slider;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(600, 400);
 	slider = createSlider(1, 100, 1);
 	
 	canvas.parent('#canvas');
@@ -41,7 +41,7 @@ function draw() {
 		let prevy = y;
 
 		let k = 2*i + 1;	
-		let r = 100 * (4 / (k*PI));
+		let r = 80 * (4 / (k*PI));
 
 		strokeWeight(4/k);
 		ellipse(x, y, 2*r, 2*r);		//main circle
